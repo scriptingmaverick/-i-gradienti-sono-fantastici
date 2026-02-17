@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conic gradients</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      #simple-conic {
+        background-image: conic-gradient(
+          from 45deg,
+          red,
+          transparent,
+          rgb(189, 130, 238) 60%
+        );
+      }
+      #simple-repeating-conic {
+        background-image: repeating-conic-gradient(
+          from 45deg,
+          red,
+          transparent,
+          rgb(189, 130, 238) 60%
+        );
+      }
+
+      .circle {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+      }
+
+      #multiple-color-conic {
+        background-image: conic-gradient(
+          violet 33%,
+          blue 33%,
+          blue 66%,
+          aqua 66%
+        );
+      }
+
+      #pacman {
+        background-image:
+          radial-gradient(circle at 60% 25%, black, black 10%, transparent 10%),
+          conic-gradient(
+            yellow 65%,
+            transparent 65%,
+            transparent 83%,
+            yellow 83%
+          ),
+          url("../images/red_black_galaxy.png");
+      }
+
+      #color-theory {
+        background-image: conic-gradient(
+          red 5.5%,
+          orangered 5.5%,
+          orangered 11%,
+          rgb(255, 100, 0) 11%,
+          rgb(255, 100, 0) 16.5%,
+          orange 16.5%,
+          orange 22%,
+          rgb(255, 190, 0) 22%,
+          rgb(255, 190, 0) 27.5%,
+          rgb(255, 225, 0) 27.5%,
+          rgb(255, 225, 0) 33%,
+          yellow 33%,
+          yellow 38.5%,
+          rgb(210, 255, 77) 38.5%,
+          rgb(210, 255, 77) 44%,
+          greenyellow 44%,
+          greenyellow 49%,
+          green 49%,
+          green 55%,
+          rgb(50, 138, 60) 55.5%,
+          rgb(50, 138, 60) 61%,
+          rgb(30, 128, 100) 61%,
+          rgb(30, 128, 100) 66.5%,
+          rgb(50, 128, 150) 66.5%,
+          rgb(50, 128, 150) 72%,
+          blue 72%,
+          blue 77.5%,
+          rgb(70, 0, 255) 77.5%,
+          rgb(70, 0, 255) 83%,
+          purple 83%,
+          purple 88.5%,
+          rgb(178, 0, 118) 88.5%,
+          rgb(178, 0, 118) 94%,
+          rgb(235, 0, 118) 94%,
+          rgb(235, 0, 118) 100%
+        );
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div id="simple-conic"></div>
+    <div id="simple-repeating-conic"></div>
+    <div id="multiple-color-conic" class="circle"></div> -->
+    <!-- <div id="pacman" class="circle"></div> -->
+    <div id="color-theory" class="circle"></div>
+  </body>
+</html>
